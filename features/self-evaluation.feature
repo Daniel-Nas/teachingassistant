@@ -19,6 +19,7 @@ And estou na página principal
 When Página de Acompanhamento for acessada
 And “Pedro” está com status "Não lida" 
 And “Rafael” está com status "Respondida"
+And "João" está com Status "Não lida"
 Then é visualizada a listagem de alunos com seus respectivos status
 And a porcentagem de alunos que já responderam a autoavaliação
 
@@ -28,4 +29,3 @@ And vejo que o aluno “Pedro” recebeu uma solicitação de autoavaliação an
 When o professor selecionar a opção “Reenviar solicitação”
 Then é visualizado o texto “uma nova notificação com o mesmo conteúdo padrão enviada pelo sistema”.
 And posso ver a tag do aluno “Pedro” como “Solicitação reenviada”
-
