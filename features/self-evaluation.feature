@@ -19,5 +19,7 @@ And estou na página principal
 When Página de Acompanhamento for acessada
 And “Pedro” está com status "Não lida" 
 And “Rafael” está com status "Respondida"
+And "João" está com Status "Não lida"
 Then é visualizada a listagem de alunos com seus respectivos status
 And a porcentagem de alunos que já responderam a autoavaliação
+
