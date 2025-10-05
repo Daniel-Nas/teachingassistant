@@ -8,7 +8,6 @@ And disponibilizar o status inicial "Não lida" no dashboard do professor
 
 Scenario: Personalização da mensagem de solicitação
 Given estou logada como usuário “Coord”
-
 And estou na Página de “solicitação de autoavaliação”
 When edito o texto padrão adicionando informações extras sobre prazos
 And envio a solicitação para os alunos
