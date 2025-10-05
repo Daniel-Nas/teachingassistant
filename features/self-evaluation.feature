@@ -23,9 +23,9 @@ And "João" está com Status "Não lida"
 Then é visualizada a listagem de alunos com seus respectivos status
 And a porcentagem de alunos que já responderam a autoavaliação
 
-Scenario4: Professor realiza reenvio manual de solicitação de autoavaliação
+Scenario4: Professor realiza reenvio manual de solicitação de autoavaliação.
 Given estou logado como usuário “Professor” com login “Prof1”
-And vejo que o aluno “Pedro” recebeu uma solicitação de autoavaliação anterior
-When o professor selecionar a opção “Reenviar solicitação”
-Then é visualizado o texto “uma nova notificação com o mesmo conteúdo padrão enviada pelo sistema”.
-And posso ver a tag do aluno “Pedro” como “Solicitação reenviada”
+And vejo que o aluno “Pedro” recebeu uma solicitação de autoavaliação anterior.
+When o professor selecionar a opção “Reenviar solicitação”.
+Then é visualizado o texto “uma nova notificação com o mesmo conteúdo padrão enviada pelo sistema”
+And posso ver a tag do aluno “Pedro” como “Solicitação reenviada”.
