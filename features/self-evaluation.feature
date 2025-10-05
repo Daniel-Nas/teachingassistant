@@ -2,9 +2,9 @@ Scenario1: Disparo automático de solicitação de autoavaliação ao encerrar o
 Given todos os módulos da disciplina foram concluídos
 And o semestre foi encerrado pelo sistema acadêmico
 When o sistema identificar o status "Semestre encerrado"
-Then uma solicitação de autoavaliação é gerada para cada aluno matriculado
-And registrar o disparo no histórico de solicitações
-And disponibilizar o status inicial "Não lida" no dashboard do professor
+Then é enviada uma solicitação de autoavaliação para "João"
+And é notificado o disparo no histórico de solicitações
+And posso ver o status "Não lida" no dashboard do professor ao lado do nome de "João"
 
 Scenario2: Personalização da mensagem de solicitação
 Given estou logada como usuário “Coord”
@@ -23,9 +23,9 @@ And "João" está com Status "Não lida"
 Then é visualizada a listagem de alunos com seus respectivos status
 And a porcentagem de alunos que já responderam a autoavaliação
 
-Scenario4: Professor realiza reenvio manual de solicitação de autoavaliação.
+Scenario4: Professor realiza reenvio manual de solicitação de autoavaliação
 Given estou logado como usuário “Professor” com login “Prof1”
-And vejo que o aluno “Pedro” recebeu uma solicitação de autoavaliação anterior.
-When o professor selecionar a opção “Reenviar solicitação”.
+And vejo que o aluno “Pedro” recebeu uma solicitação de autoavaliação anterior
+When o professor selecionar a opção “Reenviar solicitação”
 Then é visualizado o texto “uma nova notificação com o mesmo conteúdo padrão enviada pelo sistema”
-And posso ver a tag do aluno “Pedro” como “Solicitação reenviada”.
+And posso ver a tag do aluno “Pedro” como “Solicitação reenviada”
