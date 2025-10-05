@@ -12,3 +12,5 @@ And estou na Página de “solicitação de autoavaliação”
 When edito o texto padrão adicionando informações extras sobre prazos
 And envio a solicitação para os alunos
 Then cada aluno recebeu a mensagem com o texto customizado
+
+Scenarios acima!
