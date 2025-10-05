@@ -12,3 +12,12 @@ And estou na Página de “solicitação de autoavaliação”
 When edito o texto padrão adicionando informações extras sobre prazos
 And envio a solicitação para os alunos
 Then cada aluno recebeu a mensagem com o texto customizado
+
+Scenario3: Professor visualiza o acompanhamento das autoavaliações
+Given Estou logado como usuário “Professor” com login “Prof1”
+And estou na página principal
+When Página de Acompanhamento for acessada
+And “Pedro” está com status "Não lida" 
+And “Rafael” está com status "Respondida"
+Then é visualizada a listagem de alunos com seus respectivos status
+And a porcentagem de alunos que já responderam a autoavaliação
